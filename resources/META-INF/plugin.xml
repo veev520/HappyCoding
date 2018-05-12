@@ -1,0 +1,39 @@
+<idea-plugin>
+    <id>club.veev.plugin.happycoding</id>
+    <name>HappyCoding</name>
+    <version>1.0</version>
+    <vendor email="veev520@sina.com" url="http://www.veev.club">Veev</vendor>
+
+    <description><![CDATA[
+      No description.<br>
+      <em>Enjoy in you coding</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Happy coding.<br>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <toolWindow id="Happy Coding"
+                    icon="/icon/happy.png"
+                    anchor="bottom"
+                    secondary="true"
+                    factoryClass="club.veev.plugin.happycoding.HappyCoding"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>
