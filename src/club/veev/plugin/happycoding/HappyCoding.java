@@ -1,5 +1,6 @@
 package club.veev.plugin.happycoding;
 
+import club.veev.plugin.happycoding.todo.TodoWindow;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindow;
 import com.intellij.openapi.wm.ToolWindowFactory;
@@ -39,7 +40,8 @@ public class HappyCoding implements ToolWindowFactory {
         System.out.println("Constructor");
         mContentList = new ArrayList<>();
 
-        mContentList.add(new MainWindow());
+//        mContentList.add(new MainWindow());
+        mContentList.add(new TodoWindow());
     }
 
     @Override
